@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDom from "react-dom";
+import './index.css';
 
-// nested components, react tools
+//css
 
 function BookList() {
   return (
-    <section>
+    <section className="content">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
       <Book />
       <Book />
@@ -42,6 +48,8 @@ const BookTitle = () => (
   </article>
 );
 
-const Author = () => <h1>Hai</h1>
+const Author = () => <h3>Hai</h3>
+
+
 
 ReactDom.render(<BookList />, document.getElementById("root"));
