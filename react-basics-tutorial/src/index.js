@@ -2,51 +2,33 @@ import React from "react";
 import ReactDom from "react-dom";
 import './index.css';
 
-//css
+//Js
 
 function BookList() {
   return (
     <section className="content">
       <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   );
 }
+
+const author="Truong Thanh Hai"
+
 const Book = () => {
+  const title="Title book"
   return (
     <article>
-      <BookTitle />
-      <Author />
-      <ImageBook />
+      <h1>{title}</h1>
+      <h1>{author.toUpperCase()}</h1>
+      <img
+      src="https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg"
+      alt=""
+    />
+    <p>{6+12}</p>
     </article>
   );
 };
 
-const ImageBook = () => (
-  <article>
-    <img
-      src="https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg"
-      alt=""
-    />
-  </article>
-);
-
-const BookTitle = () => (
-  <article>
-    <h1>The 10 Best Books of 2019</h1>
-  </article>
-);
 
 const Author = () => <h3 style={{color:'blue',fontSize:'20px'}}>Hai</h3>
 
