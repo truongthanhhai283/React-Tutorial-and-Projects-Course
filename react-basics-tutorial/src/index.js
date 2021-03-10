@@ -48,7 +48,7 @@ const BookTitle = () => (
   </article>
 );
 
-const Author = () => <h3>Hai</h3>
+const Author = () => <h3 style={{color:'blue',fontSize:'20px'}}>Hai</h3>
 
 
 
