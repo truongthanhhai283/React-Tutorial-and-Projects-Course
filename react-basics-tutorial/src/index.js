@@ -12,7 +12,6 @@ const bookVar1 = {
   AuthorBook: "Hai",
 };
 
-
 const bookVar2 = {
   imgLink:
     "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
@@ -34,7 +33,6 @@ const bookVar4 = {
   AuthorBook: "Hai",
 };
 
-
 // const title = "Title book";
 // const AuthorBook = "Hai";
 // const linkImage =
@@ -43,21 +41,41 @@ const bookVar4 = {
 function BookList() {
   return (
     <section className="content">
-      <Book job="dev" img={bookVar1.imgLink} title={bookVar1.title} author={bookVar1.AuthorBook}/>
-      <Book job="dev" img={bookVar2.imgLink} title={bookVar2.title} author={bookVar2.AuthorBook}/>
-      <Book job="dev" img={bookVar3.imgLink} title={bookVar3.title} author={bookVar3.AuthorBook}/>
-      <Book job="dev" img={bookVar4.imgLink} title={bookVar4.title} author={bookVar4.AuthorBook}/>
+      <Book
+        job="dev"
+        img={bookVar1.imgLink}
+        title={bookVar1.title}
+        author={bookVar1.AuthorBook}
+      />
+      <Book
+        job="dev"
+        img={bookVar2.imgLink}
+        title={bookVar2.title}
+        author={bookVar2.AuthorBook}
+      />
+      <Book
+        job="dev"
+        img={bookVar3.imgLink}
+        title={bookVar3.title}
+        author={bookVar3.AuthorBook}
+      />
+      <Book
+        job="dev"
+        img={bookVar4.imgLink}
+        title={bookVar4.title}
+        author={bookVar4.AuthorBook}
+      />
     </section>
   );
 }
 
-const Book = (props) => {
-  console.log(props);
+const Book = ({ img, title, author }) => {
+  // const { img, title, author } = props;
   return (
     <article>
-      <h1>{props.title}</h1>
-      <h1>{props.author}</h1>
-      <img src={props.img} alt="" />
+      <h1>{title}</h1>
+      <h1>{author}</h1>
+      <img src={img} alt="" />
       {/* <p>{props.job}</p>
       <p>{props.title}</p>
       <p>{props.number}</p> */}
