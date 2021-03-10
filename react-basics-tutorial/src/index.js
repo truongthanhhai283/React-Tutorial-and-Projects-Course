@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactDom from "react-dom";
 
 // JSX Rules
@@ -11,27 +11,17 @@ import ReactDom from "react-dom";
 
 function Greeting() {
   return (
-    <React.Fragment>
-      <h1>Hello World</h1>
-
-      <ul>
-        <li>
-          <a href="#">Li 1</a>
-        </li>
-
-        <li>
-          <a href="#">Li 2</a>
-        </li>
-
-        <li>
-          <a href="#">Li 3</a>
-        </li>
-      </ul>
-
-      <div></div>
-    </React.Fragment>
+    <div>
+      <Person />
+      <Message />
+    </div>
   );
 }
+
+const Person = () => <h1>Test</h1>;
+const Message = () => {
+  return <h1>This's a message</h1>
+};
 
 // const Greeting = () => {
 //   return React.createElement(
