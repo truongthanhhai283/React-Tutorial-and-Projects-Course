@@ -74,3 +74,7 @@ Syntax highlighting for styled-components
 Support for dotenv file syntax
 
 ![alt text](./3-dotenv-ext.png)
+
+
+#### Shortkey
+  - rafce
