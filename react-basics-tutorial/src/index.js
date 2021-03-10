@@ -5,33 +5,41 @@ import "./index.css";
 //Js
 
 //setup vars
-const bookVar1 = {
-  imgLink:
-    "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
-  title: "Title book",
-  AuthorBook: "Hai",
-};
+const books = [
+  {
+    imgLink:
+      "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
+    title: "Title book",
+    AuthorBook: "Hai",
+  },
 
-const bookVar2 = {
-  imgLink:
-    "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
-  title: "Title book",
-  AuthorBook: "Hai",
-};
+  {
+    imgLink:
+      "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
+    title: "Title book",
+    AuthorBook: "Hai",
+  },
 
-const bookVar3 = {
-  imgLink:
-    "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
-  title: "Title book",
-  AuthorBook: "Hai",
-};
+  {
+    imgLink:
+      "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
+    title: "Title book",
+    AuthorBook: "Hai",
+  },
 
-const bookVar4 = {
-  imgLink:
-    "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
-  title: "Title book",
-  AuthorBook: "Hai",
-};
+  {
+    imgLink:
+      "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg",
+    title: "Title book",
+    AuthorBook: "Hai",
+  },
+];
+
+const names1 = ["join", "susan"];
+const newNames = names1.map((x) => {
+  return <h1>{x}</h1>;
+});
+console.log(newNames);
 
 // const title = "Title book";
 // const AuthorBook = "Hai";
@@ -39,36 +47,7 @@ const bookVar4 = {
 //   "https://static01.nyt.com/images/2019/11/21/books/best-books-2019/best-books-2019-mobileMasterAt3x.jpg";
 
 function BookList() {
-  return (
-    <section className="content">
-      <Book
-        job="dev"
-        img={bookVar1.imgLink}
-        title={bookVar1.title}
-        author={bookVar1.AuthorBook}
-      >
-        <p>lorem.........</p>
-      </Book>
-      <Book
-        job="dev"
-        img={bookVar2.imgLink}
-        title={bookVar2.title}
-        author={bookVar2.AuthorBook}
-      />
-      <Book
-        job="dev"
-        img={bookVar3.imgLink}
-        title={bookVar3.title}
-        author={bookVar3.AuthorBook}
-      />
-      <Book
-        job="dev"
-        img={bookVar4.imgLink}
-        title={bookVar4.title}
-        author={bookVar4.AuthorBook}
-      />
-    </section>
-  );
+  return <section className="content">{newNames}</section>;
 }
 
 const Book = ({ img, title, author, children }) => {
