@@ -46,7 +46,9 @@ function BookList() {
         img={bookVar1.imgLink}
         title={bookVar1.title}
         author={bookVar1.AuthorBook}
-      />
+      >
+        <p>lorem.........</p>
+      </Book>
       <Book
         job="dev"
         img={bookVar2.imgLink}
@@ -69,12 +71,15 @@ function BookList() {
   );
 }
 
-const Book = ({ img, title, author }) => {
+const Book = ({ img, title, author, children }) => {
   // const { img, title, author } = props;
+  console.log(children);
   return (
     <article>
+      {/* props... */}
       <h1>{title}</h1>
       <h1>{author}</h1>
+      {children}
       <img src={img} alt="" />
       {/* <p>{props.job}</p>
       <p>{props.title}</p>
