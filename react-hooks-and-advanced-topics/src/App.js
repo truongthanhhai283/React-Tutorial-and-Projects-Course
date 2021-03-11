@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Setup from "./tutorial/setup/2-useState-basics";
+import Setup from './tutorial/setup/3-useState-array';
 
-import Final from "./tutorial/final/2-useState-basics";
+import Final from "./tutorial/final/3-useState-array";
 
 function App() {
   return (
