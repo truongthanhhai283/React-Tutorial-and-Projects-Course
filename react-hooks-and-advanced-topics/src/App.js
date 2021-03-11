@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Setup from './tutorial/setup/5-useState-counter';
+import Setup from './tutorial/2-useEffect/setup/1-useEffect-basics';
 
-import Final from "./tutorial/final/5-useState-counter";
+import Final from './tutorial/2-useEffect/final/1-useEffect-basics';
 
 function App() {
   return (
