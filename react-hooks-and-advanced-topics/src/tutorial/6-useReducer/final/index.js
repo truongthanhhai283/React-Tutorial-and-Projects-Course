@@ -42,7 +42,14 @@ const Index = () => {
       {state.people.map((person) => {
         return (
           <div key={person.id} className='item'>
-            <h4>{person.name}</h4>      
+            <h4>{person.name}</h4>
+            <button
+              onClick={() =>
+                dispatch({ type: 'REMOVE_ITEM', payload: person.id })
+              }
+            >
+              remove
+            </button>
           </div>
         );
       })}
