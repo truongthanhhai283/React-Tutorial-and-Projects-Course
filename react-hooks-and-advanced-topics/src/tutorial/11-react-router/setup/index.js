@@ -11,7 +11,8 @@ import Person from './Person';
 import Navbar from './Navbar';
 const ReactRouterSetup = () => {
   return <Router>
-    <Route path="/">
+    <Switch>
+    <Route exact path="/">
       <Home/>
     </Route>
 
@@ -22,6 +23,11 @@ const ReactRouterSetup = () => {
     <Route path="/people">
       <People/>
     </Route>
+
+    <Error path="*">
+      <Error/>
+    </Error>
+    </Switch>
   </Router>;
 };
 
