@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Setup from "./tutorial/4-forms/setup/2-multiple-inputs";
+import Setup from "./tutorial/5-useRef/setup/1-useRef-basics";
 
-import Final from "./tutorial/4-forms/final/2-multiple-inputs";
+import Final from "./tutorial/5-useRef/final/1-useRef-basics";
 
 function App() {
   return (
     <div className="container">
-      {/* <Setup /> */}
+      <Setup />
       <Final />
     </div>
   );
