@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Setup from "./tutorial/10-prop-types/setup";
+// import Setup from "./tutorial/10-prop-types/setup";
 
-// import Final from "./tutorial/10-prop-types/final";
+import Final from "./tutorial/10-prop-types/final";
 
 function App() {
   return (
     <div className="container">
-      <Setup />
-      {/* <Final /> */}
+      {/* <Setup /> */}
+      <Final />
     </div>
   );
 }
