@@ -4,6 +4,17 @@ import { Navbar, Sidebar, Footer } from "./components";
 
 import Testing from "./Testing";
 
+import {
+  Home,
+  Products,
+  SingleProduct,
+  About,
+  Cart,
+  Error,
+  Checkout,
+  Private,
+} from "./pages";
+
 /*import styled from "styled-components";
 
 const Button = styled.button`
@@ -45,7 +56,54 @@ function App() {
         </div>
       </Container2> */}
 
-      <Testing />
+      {/* <Testing /> */}
+
+      <Router>
+        <Navbar />
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/products">
+            <Products />
+          </Route>
+
+          <Route exact path="/singleProduct">
+            <SingleProduct />
+          </Route>
+
+          <Route exact path="/about">
+            <About />
+          </Route>
+
+          <Route exact path="/cart">
+            <Cart />
+          </Route>
+
+          <Route exact path="/error">
+            <Error />
+          </Route>
+
+          <Route exact path="/checkout">
+            <Checkout />
+          </Route>
+
+          <Route exact path="/private">
+            <Private />
+          </Route>
+
+          <Route exact path="/product/:id" children={<SingleProduct />}>
+            <Private />
+          </Route>
+
+          <Route exact path="*">
+            <Error />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
