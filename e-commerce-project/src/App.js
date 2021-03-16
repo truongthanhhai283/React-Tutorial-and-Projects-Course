@@ -42,7 +42,7 @@ const Container2 = styled.div`
 function App() {
   return (
     <div>
-      <h4>comfy sloth starter</h4>
+      {/* <h4>comfy sloth starter</h4> */}
       {/* <Button>Click me</Button>
       <Container>
         <div>
