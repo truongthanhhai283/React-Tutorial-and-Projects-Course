@@ -1,0 +1,6 @@
+#### _Install Components_
+
+vscode-styled-components
+
+npm install auth0
+npm install @auth0/auth0-react
