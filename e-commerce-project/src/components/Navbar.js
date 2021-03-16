@@ -32,6 +32,8 @@ const Nav = () => {
             );
           })}
         </ul>
+
+        {/* add cart button */}
         <CartButtons />
       </div>
     </NavContainer>
