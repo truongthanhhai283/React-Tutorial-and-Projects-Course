@@ -1,6 +1,7 @@
 #### _Install Components_
 
 vscode-styled-components
+ES7 React/Redux/GraphQL/React-Native snippets  
 
 npm install auth0
 npm install @auth0/auth0-react
