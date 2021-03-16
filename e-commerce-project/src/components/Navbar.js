@@ -12,26 +12,28 @@ const Nav = () => {
   return (
     <NavContainer>
       <div className="nav-center">
-        <Link to="/">
-          <img src={logo} alt="comfy sloth" />
-        </Link>
+        <div className="nav-header">
+          <Link to="/">
+            <img src={logo} alt="comfy sloth" />
+          </Link>
+
+          <button type="button" className="nav-toggle">
+            <FaBars />
+          </button>
+        </div>
+
+        <ul className="nav-links">
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <CartButtons />
       </div>
-
-      <button type="button" className="nav-toggle">
-        <FaBars />
-      </button>
-
-      <ul className="nav-links">
-        {links.map((link) => {
-          const { id, text, url } = link;
-          return (
-            <li key={id}>
-              <Link to={url}>{text}</Link>
-            </li>
-          );
-        })}
-      </ul>
-      <CartButtons />
     </NavContainer>
   );
 };
@@ -67,6 +69,7 @@ const NavContainer = styled.nav`
   }
   .nav-links {
     display: none;
+    text-align: center;
   }
   .cart-btn-wrapper {
     display: none;
